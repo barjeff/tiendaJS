@@ -134,6 +134,10 @@
   justify-content: space-between;
 }
 
+.piedepagina .container-fluid .d-flex .cont {
+  background-image: linear-gradient(#a4a8aa, #e3f6f8);
+}
+
 .side-bar-wrapper {
   position: fixed;
   top: 25px;
@@ -174,7 +178,7 @@ aside .iconcarri {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(#c1c8cb, #e3f6f8);
+  background-image: linear-gradient(#a4a8aa, #e3f6f8);
 }
 
 aside .iconcarri .carri {
@@ -237,11 +241,6 @@ aside .iconcarri .carri:hover {
 }
 
 .hparallx {
-  color: black;
-}
-
-.pparallax {
-  font-size: 2em;
   color: black;
 }
 

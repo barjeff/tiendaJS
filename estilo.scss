@@ -127,6 +127,9 @@
             display: flex;
             text-align: center;
             justify-content: space-between;
+            .cont {
+                background-image: linear-gradient( #a4a8aa, rgb(227, 246, 248));
+            }
         }
     }
 }
@@ -170,7 +173,7 @@ aside {
         display: flex;
         justify-content: center;
         text-align: center;
-        background-image: linear-gradient( #c1c8cb, rgb(227, 246, 248));
+        background-image: linear-gradient( #a4a8aa, rgb(227, 246, 248));
         .carri {
             padding: 25px;
             position: fixed;
@@ -234,11 +237,6 @@ aside {
 }
 
 .hparallx {
-    color: black;
-}
-
-.pparallax {
-    font-size: 2em;
     color: black;
 }
 

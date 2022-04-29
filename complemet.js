@@ -171,7 +171,29 @@ function actualizarTabla() {
 let objparse = JSON.parse(localStorage.getItem('Productos'));
 almacenados = JSON.parse(localStorage.getItem('Productos')) || [];
 
-/////   
+/////   Funcion compra exitosa
+function comprarBtn() {
+    const btnCompra = document.getElementById("btnTableCompra")
+    btnCompra.onclick = (e) => {
+        e.target;
+        e.preventDefault
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Compra Realizada con Exito',
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+}
+///// El evento del boton comprar solo se activa si hay elementos en el array
+if (almacenados.length !== 0) {
+    comprarBtn();
+    console.log("El carrito no está vacío Puedes comprar!");
+
+}
+
+
 
 //// side bar
 const openBtn = document.querySelector(".carri");
