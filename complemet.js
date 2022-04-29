@@ -35,7 +35,8 @@ function crearCards(celular) {
     </div>`;
     rowdiv.append(cards)
 
-    cards.classList.add("card", "col", "col-lg-3", "col-sm-8", );
+    cards.classList.add("card", "col", "col-lg-3", "col-md-6",
+        "col-sm-8", );
 
     const btn = document.querySelectorAll(".boton");
     for (const boton of btn) {

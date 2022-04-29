@@ -11,9 +11,21 @@
 
 .navbar {
   background-image: linear-gradient(to right, #b9bcbe, #c5dde0, #041516, #b7ebee, #90e9ef);
-  height: 110px;
+  height: auto;
   margin-bottom: 5px;
   color: white;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar img {
+  height: 120px;
+  width: 120px;
+  border-radius: 40%;
+  background: transparent;
 }
 
 .search {
@@ -138,6 +150,10 @@
   background-image: linear-gradient(#a4a8aa, #e3f6f8);
 }
 
+.piedepagina .container-fluid .d-flex .cont img {
+  border-radius: 20%;
+}
+
 .side-bar-wrapper {
   position: fixed;
   top: 25px;
@@ -248,4 +264,11 @@ aside .iconcarri .carri:hover {
   height: 90vh;
   padding: 7rem 0;
   background: url(https://images.samsung.com/ar/smartphones/galaxy-s22/images/galaxy-s22_highlights_kv_img.jpg) center center/cover no-repeat fixed;
+}
+
+@media screen and (max-width: 580px) {
+  .col {
+    /* flex-basis: auto!important;*/
+    min-width: auto !important;
+  }
 }
