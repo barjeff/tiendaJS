@@ -111,13 +111,12 @@ function actualizarBotonesyLocalStorage() {
 }
 ///////////////// tabla de carrito ///////////////////////
 
-let totalProductos = document.getElementById("Totalproducto")
+let totalProductos = document.querySelector(".totalpro")
 let totalPrecio = document.getElementById("Totalprecio")
 let tabla = document.getElementById("tablabdy");
 let cupon = document.getElementById("descontar")
 
 function agregarDatos(celular) {
-
     /// creae row de articulos
     let row = document.createElement("tr");
     row.innerHTML = `<th><img src= ${celular.img} class="card-img-top imgheigh border" alt="..."></th><th>${celular.marca}</th><th>${celular.id}</th><th>${celular.precio}</th><th>${celular.cantidad}</th><th> <button class="eliminar-item" id= "#${celular.id}"></button></th>`;
@@ -188,10 +187,6 @@ function agregarDatos(celular) {
 
 //// actualizo la tabla 
 function actualizarTabla() {
-
-
-
-
     tabla.innerHTML = "";
     almacenados.forEach((item) => {
         agregarDatos(item);

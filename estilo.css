@@ -19,7 +19,6 @@
 .navbar div {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column;
 }
 
 .navbar div div {
@@ -76,10 +75,6 @@
   padding: 5px;
   width: 150px;
   height: 250px;
-}
-
-.imgheigh {
-  height: 100px;
 }
 
 .btnOtros {
@@ -299,6 +294,9 @@ aside .iconcarri .carri:hover {
 }
 
 @media screen and (max-width: 580px) {
+  .imgheigh {
+    display: none;
+  }
   .ulh {
     display: none;
   }
@@ -306,6 +304,9 @@ aside .iconcarri .carri:hover {
     display: none;
   }
   #teAyudamos {
+    display: none;
+  }
+  .totalpro {
     display: none;
   }
   .col {
@@ -317,6 +318,28 @@ aside .iconcarri .carri:hover {
   }
   .sideTel .divBusqueda {
     width: 95px !important;
+  }
+  #tablabdy {
+    display: flex;
+  }
+  #tablabdy th {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 0%;
+    margin: 5px;
+  }
+  table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  tr {
+    display: flex;
+    width: min-content;
+  }
+  th {
+    display: flex;
   }
 }
 
