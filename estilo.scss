@@ -20,8 +20,26 @@
         div {
             display: flex;
             justify-content: space-evenly;
+            flex-direction: column;
+            div {
+                display: flex;
+                justify-content: space-evenly;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 100px;
+                    text-align: center;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
         }
-        img {
+        .imglogo {
             height: 120px;
             width: 120px;
             border-radius: 40%;
@@ -153,10 +171,10 @@
     ////// side bar /////
     .side-bar-wrapper {
         position: fixed;
-        top: 25px;
-        width: 0vw;
-        height: 95%;
+        top: 0;
+        height: 100%;
         z-index: 2;
+        background-color: rgba(45, 49, 49, 0.3);
     }
     
     #side-bar {
@@ -181,10 +199,10 @@
     
     aside {
         position: fixed;
-        top: 200px;
+        top: 180px;
         width: 0vw;
         z-index: 2;
-        right: 98%;
+        right: 96%;
         .iconcarri {
             border-radius: 10%;
             height: 120px;
@@ -215,7 +233,6 @@
         display: block;
         text-align: center;
     }
-    /*#close-cart>i {}*/
     
     .cart-container {
         display: flex;
@@ -261,7 +278,7 @@
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;*/
+        -moz-text-fill-color: transparent; */
     }
     
     #teAyudamos {
@@ -271,8 +288,46 @@
     }
     
     @media screen and (max-width: 580px) {
+        .ulh {
+            display: none;
+        }
+        .imglogo {
+            display: none;
+        }
+        #teAyudamos {
+            display: none;
+        }
         .col {
             /* flex-basis: auto!important;*/
             min-width: auto !important;
+        }
+        aside {
+            .iconcarri {
+                width: 80px !important;
+            }
+        }
+        .sideTel {
+            .divBusqueda {
+                width: 95px !important;
+            }
+        }
+    }
+    
+    .sideTel {
+        position: fixed;
+        top: 400px;
+        z-index: 2;
+        right: 98%;
+        .divBusqueda {
+            border-radius: 10%;
+            height: auto;
+            width: 170px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-image: linear-gradient( #a4a8aa, rgb(227, 246, 248));
+            .ulsearch {
+                text-decoration: none;
+            }
         }
     }

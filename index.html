@@ -21,27 +21,29 @@
         <!--Barra de Menú-->
         <nav class="navbar navbar-light">
             <div class="container-fluid">
-                <img class="imglogo" src="img/dlogob.png" alt="">
+                <div>
+                    <img class="imglogo" src="img/dlogob.png" alt="">
+                    <ul class="  navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="ulh" aria-current="page" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn search" type="submit">Search</button>
+                    <input class="form-control me-2 barraBusqueda" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn  botonBusqueda" type="submit">Buscar </button>
                 </form>
-
-
             </div>
         </nav>
     </header>
     <main class="principal">
         <section id="teAyudamos" class="text-center text-white">
-
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h2 class="display-4 hparallx font-weight-bold">Nuevo Galaxy S22+</h2>
-
                     </div>
                 </div>
-
             </div>
         </section>
         <div class="titulo">
@@ -50,57 +52,62 @@
         <section class="apoyo">
             <div class="container container-fluid">
                 <div id="rowcard" class="row">
-
                 </div>
             </div>
-            <aside>
+            <aside class="asideIcon">
                 <div class="iconcarri">
                     <i class="fa carri fa-shopping-cart" aria-hidden="true"></i>
                 </div>
             </aside>
-            <div class="side-bar-wrapper">
-                <div class="sidebar" id="side-bar">
-                    <div class="cart-container text-center">
-                        <table class=" table  table-hover">
-                            <thead class="table-info">
-                                <tr class="table-primary">
-                                    <th></th>
-                                    <th>Marca</th>
-                                    <th>Id</th>
-                                    <th>Precio</th>
-                                    <th>Unidades </th>
-                                    <th> </th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody id="tablabdy" class="table-striped">
-                            </tbody>
-                            <tfoot class="thead-info">
-                                <tr>
-                                    <th>nro. Productos: </th>
-                                    <th id="Totalproducto"></th>
-                                    <th>Cupon Descuento: </th>
-                                    <th id="descontar"></th>
-                                    <th></th>
-                                    <th>Total precio: </th>
-                                    <th id="Totalprecio"></th>
-                                </tr>
-                                <tr class="compraconfirmada">
-                                    <th> </th>
+            <aside class="sideTel">
+                <div class="divBusqueda">
 
-                                    <th>
-                                        <button id="btnTableCompra" class="btnOtros">
+                </div>
+            </aside>
+            <aside>
+                <div class="side-bar-wrapper">
+                    <div class="sidebar" id="side-bar">
+                        <div class="cart-container text-center">
+                            <table class=" table  table-hover">
+                                <thead class="table-info">
+                                    <tr class="table-primary">
+                                        <th></th>
+                                        <th>Marca</th>
+                                        <th>Id</th>
+                                        <th>Precio</th>
+                                        <th>Unidades </th>
+                                        <th> </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablabdy" class="table-striped">
+                                </tbody>
+                                <tfoot class="thead-info">
+                                    <tr>
+                                        <th>nro. Productos: </th>
+                                        <th id="Totalproducto"></th>
+                                        <th>Cupon Descuento: </th>
+                                        <th id="descontar"></th>
+                                        <th></th>
+                                        <th>Total precio: </th>
+                                        <th id="Totalprecio"></th>
+                                    </tr>
+                                    <tr class="compraconfirmada">
+                                        <th> </th>
+
+                                        <th>
+                                            <button id="btnTableCompra" class="btnOtros">
                                             Comprar
                                         </button>
-                                    </th>
-                                </tr>
-                            </tfoot>
-                        </table>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
 
-                        <span id="close-cart"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                            <span id="close-cart"><i class="fa fa-window-close" aria-hidden="true"></i></span>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
     </main>
     <!--Pie de Pagina-->
@@ -109,12 +116,12 @@
             <div class="row d-flex">
                 <div class="col-lg-6 cont col-sm-12">
                     <h3>Correo</h3>
-                    <img src="img/correo.jpeg" width="90px" height="90px">
+                    <p>jeffermanu97@gmail.com</p>
 
                 </div>
                 <div class=" col-lg-6 cont col-sm-12">
                     <h3>Teléfono</h3>
-                    <img src="img/telefono.jpeg" width="90px" height="90px">
+                    <p>+541131146932</p>
 
                 </div>
             </div>
@@ -122,7 +129,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="complemet.js"></script>
-
 </body>
 
 </html>

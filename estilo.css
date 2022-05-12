@@ -19,9 +19,28 @@
 .navbar div {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
-.navbar img {
+.navbar div div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar div div ul {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.navbar div div ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+
+.navbar .imglogo {
   height: 120px;
   width: 120px;
   border-radius: 40%;
@@ -160,10 +179,10 @@
 
 .side-bar-wrapper {
   position: fixed;
-  top: 25px;
-  width: 0vw;
-  height: 95%;
+  top: 0;
+  height: 100%;
   z-index: 2;
+  background-color: rgba(45, 49, 49, 0.3);
 }
 
 #side-bar {
@@ -188,10 +207,10 @@
 
 aside {
   position: fixed;
-  top: 200px;
+  top: 180px;
   width: 0vw;
   z-index: 2;
-  right: 98%;
+  right: 96%;
 }
 
 aside .iconcarri {
@@ -226,7 +245,6 @@ aside .iconcarri .carri:hover {
   text-align: center;
 }
 
-/*#close-cart>i {}*/
 .cart-container {
   display: flex;
   width: auto;
@@ -271,7 +289,7 @@ aside .iconcarri .carri:hover {
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;*/
+        -moz-text-fill-color: transparent; */
 }
 
 #teAyudamos {
@@ -281,8 +299,44 @@ aside .iconcarri .carri:hover {
 }
 
 @media screen and (max-width: 580px) {
+  .ulh {
+    display: none;
+  }
+  .imglogo {
+    display: none;
+  }
+  #teAyudamos {
+    display: none;
+  }
   .col {
     /* flex-basis: auto!important;*/
     min-width: auto !important;
   }
+  aside .iconcarri {
+    width: 80px !important;
+  }
+  .sideTel .divBusqueda {
+    width: 95px !important;
+  }
+}
+
+.sideTel {
+  position: fixed;
+  top: 400px;
+  z-index: 2;
+  right: 98%;
+}
+
+.sideTel .divBusqueda {
+  border-radius: 10%;
+  height: auto;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(#a4a8aa, #e3f6f8);
+}
+
+.sideTel .divBusqueda .ulsearch {
+  text-decoration: none;
 }

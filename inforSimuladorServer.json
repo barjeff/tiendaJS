@@ -1,0 +1,14 @@
+[
+    { "marca": "samsung galaxy s22", "precio": "120000", "img": "img/galaxys22.jpg", "id": "01", "cantidad": "1" },
+    { "marca": "samsung Galaxy A71", "precio": "80000", "img": "img/galaxyZflip.jpg ", "id": "02", "cantidad": "1" },
+    { "marca": "samsung galaxy z flipp", "precio": "160000", "img": "img/samsunga71.jpg", "id": "03", "cantidad": "1" },
+    { "marca": "motorola Moto G71", "precio": "90000", "img": "img/motoG71.jpg", "id": "04", "cantidad": "1" },
+    { "marca": "motorola Moto G60", "precio": "70000", "img": "img/motorolaG60.jpg ", "id": "05", "cantidad": "1" },
+    { "marca": "motorola Moto Edge", "precio": "120000", "img": "img/motoEdge20.jpg", "id": "06", "cantidad": "1" },
+    { "marca": "Iphone 13 ", "precio": "130000", "img": "img/iphone13.jpg", "id": "08", "cantidad": "1" },
+    { "marca": "Iphone 12 ", "precio": "150000", "img": "img/iphone12.jpg ", "id": "07", "cantidad": "1" },
+    { "marca": "Iphone xr ", "precio": "110000", "img": "img/iphonexr.jpg", "id": "09", "cantidad": "1" },
+    { "marca": "Xiaomi Redmi note 11 ", "precio": "90000", "img": "img/redmi11.jpg", "id": "10", "cantidad": "1" },
+    { "marca": "Xiaomi Redmi 10 Pro", "precio": "80000", "img": "img/redmi10.jpg", "id": "11", "cantidad": "1" },
+    { "marca": "Xiaomi Redmi  9T Dual ", "precio": "75000", "img": "img/redmi9.jpg", "id": "12", "cantidad": "1" }
+]
