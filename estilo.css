@@ -319,12 +319,7 @@ aside .iconcarri .carri:hover {
   .sideTel .divBusqueda {
     width: 95px !important;
   }
-  #tablabdy {
-    display: flex;
-  }
   #tablabdy th {
-    display: flex;
-    flex-wrap: wrap;
     width: auto;
     padding: 0%;
     margin: 5px;

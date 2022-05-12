@@ -111,7 +111,7 @@ function actualizarBotonesyLocalStorage() {
 }
 ///////////////// tabla de carrito ///////////////////////
 
-let totalProductos = document.querySelector(".totalpro")
+let totalProductos = document.getElementById("Totalproducto")
 let totalPrecio = document.getElementById("Totalprecio")
 let tabla = document.getElementById("tablabdy");
 let cupon = document.getElementById("descontar")
