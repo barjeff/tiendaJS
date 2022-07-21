@@ -34,7 +34,6 @@ const carritoCelulares = [galaxys22, galaxya71, galaxflip, motorolag71, motorola
             crearCards(celular);
         }); 
 }
-
 pedirRecurso()*/
 
 
@@ -274,12 +273,12 @@ function AsideSearch() {
     let ulSearch = document.createElement("ul");
     ulSearch.className = ("navbar-nav");
     ulSearch.innerHTML = `
-<p><b>Buscar por Marcas</b></p>
+
 <li><button id="iphone" class="btn searchMarca" value="iphone">Iphone</button></li>
 <li><button id="samsung" class="btn searchMarca" value="samsung">Samsung</button></li>
 <li><button id="motorola" class="btn searchMarca" value="motorola">Motorola</button></li>
 <li><button id="xiaomi" class="btn searchMarca" value="xiaomi">Xiaomi</button></li>
-<li><a href="index.html" class="btn">Mostrar <b>Todos</b></a></li>
+
 `
     divSearh.append(ulSearch);
 

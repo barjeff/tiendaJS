@@ -10,7 +10,7 @@
 }
 
 .navbar {
-  background-image: linear-gradient(to right, #b9bcbe, #c5dde0, #041516, #b7ebee, #90e9ef);
+  background-image: linear-gradient(to right, #b9bcbe, #c5dde0, #b7ebee, #90e9ef);
   height: auto;
   margin-bottom: 5px;
   color: white;
@@ -336,25 +336,14 @@ aside .iconcarri .carri:hover {
   th {
     display: flex;
   }
-}
-
-.sideTel {
-  position: fixed;
-  top: 400px;
-  z-index: 2;
-  right: 98%;
-}
-
-.sideTel .divBusqueda {
-  border-radius: 10%;
-  height: auto;
-  width: 170px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-image: linear-gradient(#a4a8aa, #e3f6f8);
-}
-
-.sideTel .divBusqueda .ulsearch {
-  text-decoration: none;
+  .formquery {
+    display: none !important;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

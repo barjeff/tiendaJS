@@ -13,7 +13,7 @@
 }
 
 .navbar {
-    background-image: linear-gradient(to right, #b9bcbe, rgb(197, 221, 224), rgb(4, 21, 22), rgb(183, 235, 238), rgb(144, 233, 239));
+    background-image: linear-gradient(to right, #b9bcbe, rgb(197, 221, 224),  rgb(183, 235, 238), rgb(144, 233, 239));
     height: auto;
     margin-bottom: 5px;
     color: white;
@@ -283,6 +283,7 @@ aside {
 }
 
 @media screen and (max-width: 580px) {
+   
     .imgheigh {
         display: none;
     }
@@ -331,23 +332,16 @@ aside {
     th {
         display: flex;
     }
+    .formquery {
+        display: none !important;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       }
+
 }
 
-.sideTel {
-    position: fixed;
-    top: 400px;
-    z-index: 2;
-    right: 98%;
-    .divBusqueda {
-        border-radius: 10%;
-        height: auto;
-        width: 170px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        background-image: linear-gradient( #a4a8aa, rgb(227, 246, 248));
-        .ulsearch {
-            text-decoration: none;
-        }
-    }
-}
